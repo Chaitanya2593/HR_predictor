@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <title>HR_Predictor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #3285a8;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+
+    </style>
+</head>
+</html>
+<form method="POST" action="">
+    <header>
+        <h2>HR_Predictor</h2>
+    </header>
+{%csrf_token%}
+    {{form.as_p}}
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+</form>
+<h4>Left Value ::{{result}}<h4>
+
+<!--<form method="POST" action="">-->
+<!--    {%csrf_token%}-->
+<!--    satisfaction_level: <input type="text" name="satisfaction_level", placeholder="1",align="middle">-->
+<!--    department: <input type="text" name="department", placeholder="1">-->
+<!--    last_evaluation: <input type="text" name="last_evaluation", placeholder="1">-->
+<!--    number_project:<input type="text" name="number_project", placeholder="1">-->
+<!--    average_montly_hours:<input type="text" name="average_montly_hours", placeholder="1">-->
+<!--    time_spend_company:<input type="text" name="time_spend_company", placeholder="1">-->
+<!--    promotion_last_5years:<input type="text" name="promotion_last_5years", placeholder="1">-->
+<!--    Work_accident:<input type="text" name="Work_accident", placeholder="1">-->
+<!--    salary:<input type="text" name="salary", placeholder="1">-->
+
+<!--        <input type="submit" value="Save">-->
+<!--        <input type="reset" value="Reset">-->
+<!--        <output aria-valuetext="Left"></output>-->
+<!--</form>-->

@@ -1,0 +1,10 @@
+{% if latest_dl_models %}
+<ul>
+    {% for model in latest_dl_models %}
+    <li><a href="{% url 'polls:{{ model.dl_model_text }}' %}">{{ model.dl_model_text }}</a></li>
+
+    {% endfor %}
+</ul>
+{% else %}
+<p>No polls are available.</p>
+{% endif %}
