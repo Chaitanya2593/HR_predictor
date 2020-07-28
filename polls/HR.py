@@ -26,8 +26,8 @@ data = {
 
 body = str.encode(json.dumps(data))
 
-url = 'https://ussouthcentral.services.azureml.net/workspaces/4c65cbce7ecf40f2bf7c75eafe8191ef/services/a0e6771c07104d1a9a7075b09098e345/execute?api-version=2.0&format=swagger'
-api_key = 'kHiRrxJUPXWpoEnykOD7Byxt4Lw0kBTpYsi872c4SsHFH9UlmcfpMvKGrkY5Y7AqKtDG0Q7GsRSTBpOkiCzVZQ==' # Replace this with the API key for the web service
+url = {AZureMlURL}
+api_key = {AZureMlAPU_key} # Please provideAPI key you have created
 headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
 req = urllib.request.Request(url, body, headers)
