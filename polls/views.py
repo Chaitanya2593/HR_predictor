@@ -82,8 +82,8 @@ def define_model(paramters):
         }
     }
     body = str.encode(json.dumps(data))
-    url = 'https://ussouthcentral.services.azureml.net/workspaces/4c65cbce7ecf40f2bf7c75eafe8191ef/services/a0e6771c07104d1a9a7075b09098e345/execute?api-version=2.0&format=swagger'
-    api_key = 'i4eQU1mwV3IWwjOrtF3PHOW65/pVAxagVzu0xWp7TYvR5+uKaJmPmwie6znF9b4/7kvyQmATPgvrLCbBudtG1g==' # Replace this with the API key for the web service
+    url = {AZureMlURL}
+    api_key = {AZureMlAPI_Key}
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
     req = urllib.request.Request(url, body, headers)
     try:
